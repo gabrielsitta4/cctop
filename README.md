@@ -78,8 +78,8 @@ Then add the **cctop** widget to your panel.
 ## ⚙️ Configuration
 
 Right-click the widget → *Configure cctop*: language, what the panel label
-shows, notification threshold, monthly budget, extra subscriptions and
-refresh interval.
+shows, notification threshold, monthly budget, extra subscriptions, popup
+colors and refresh interval.
 
 ## 🌅 Morning summary (optional)
 
