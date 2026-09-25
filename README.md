@@ -1,11 +1,13 @@
 # cctop
 
-[![KDE Store](https://img.shields.io/badge/KDE_Store-cctop-1d99f3?logo=kde&logoColor=white)](https://store.kde.org/browse?search=cctop)
 [![Version](https://img.shields.io/github/v/release/gabrielsitta4/cctop?label=version&color=54a3d8)](https://github.com/gabrielsitta4/cctop/releases)
 [![Plasma 6](https://img.shields.io/badge/Plasma-6-54a3d8?logo=kde&logoColor=white)](https://kde.org/plasma-desktop/)
-[![GNOME Shell](https://img.shields.io/badge/GNOME_Shell-48--50-4a86cf?logo=gnome&logoColor=white)](https://extensions.gnome.org/)
+[![GNOME Shell](https://img.shields.io/badge/GNOME_Shell-48--50-4a86cf?logo=gnome&logoColor=white)](gnome/)
 [![Waybar](https://img.shields.io/badge/Waybar-module-58e1ff?logo=hyprland&logoColor=white)](waybar/)
 [![License](https://img.shields.io/badge/license-GPL--3.0-green)](LICENSE)
+
+No longer maintained. cctop left the KDE Store and extensions.gnome.org, so
+install it from this repository.
 
 <p>
 <img src="media/kde-popup.png" width="380" alt="cctop on KDE Plasma">
@@ -21,10 +23,10 @@ All versions share the same collectors. Plasma and GNOME show the same popup;
 the Waybar module shows the panel value with a summary tooltip. Pick the one
 for your desktop:
 
-| Desktop | Package | Where |
+| Desktop | Package | Folder |
 |---|---|---|
-| KDE Plasma 6 | plasmoid | `plasma/`, [KDE Store](https://store.kde.org/browse?search=cctop) |
-| GNOME Shell 48 to 50 | extension | `gnome/`, extensions.gnome.org (under review) |
+| KDE Plasma 6 | plasmoid | `plasma/` |
+| GNOME Shell 48 to 50 | extension | `gnome/` |
 | Waybar (Hyprland, Sway) | module | `waybar/` |
 
 ## Features
@@ -101,10 +103,6 @@ log sample are welcome.
 
 ### KDE Plasma
 
-From the KDE Store: right-click your panel → *Add Widgets* → *Get New Widgets* → search **cctop**.
-
-Manual:
-
 ```sh
 git clone https://github.com/gabrielsitta4/cctop.git
 kpackagetool6 --type Plasma/Applet --install cctop/plasma
@@ -113,11 +111,6 @@ kpackagetool6 --type Plasma/Applet --install cctop/plasma
 Then add the **cctop** widget to your panel.
 
 ### GNOME Shell
-
-From extensions.gnome.org: search **cctop** in the Extensions app or on the
-site, once the review is through.
-
-Manual:
 
 ```sh
 git clone https://github.com/gabrielsitta4/cctop.git
@@ -201,11 +194,9 @@ systemctl --user enable --now cctop-summary.timer
 
 ## Donate
 
-If cctop is useful to you, you can support it through the heart button in the widget, the PayPal button below or the QR code:
+If cctop is useful to you, you can support it through the heart button in the widget or the PayPal button below:
 
 [![Donate via PayPal](https://img.shields.io/badge/PayPal-Donate-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?business=SR28XBBCYSPHE&no_recurring=0&item_name=Help+me+buy+a+coffee.&currency_code=USD)
-
-<img src="shared/images/donate-qr.png" width="140" alt="PayPal donation QR code">
 
 ## License
 
